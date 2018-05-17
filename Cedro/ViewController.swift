@@ -33,41 +33,6 @@ class ViewController: UIViewController {
         var error:NSError?
         
         self.performSegue(withIdentifier: Constantes.segueLogar, sender: self)
-        
-//        guard auth.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-//            showAlertViewIfNoBiometricSensorHasBeenDetected()
-//            self.performSegue(withIdentifier: "segue_logar", sender: self)
-//            return
-//        }
-//
-//        auth.evaluatePolicy(
-//            .deviceOwnerAuthenticationWithBiometrics,
-//            localizedReason: "Digital não reconhecida",
-//            reply: { [unowned self] (success, error) -> Void in
-//
-//                if( success ) {
-//                    self.navigateToAuthenticatedViewController()
-//                }else {
-//                    if let error = error {
-//
-//                        self.showAlertViewAfterEvaluatingPolicyWithMessage(message: error.localizedDescription)
-//                        self.performSegue(withIdentifier: "segue_logar", sender: self)
-//                    }
-//
-//                }
-//        })
-    }
-    
-//    func showAlertViewIfNoBiometricSensorHasBeenDetected(){
-//
-//        showAlertWithTitle(title: "Error", message: "This device does not have a TouchID sensor.")
-//
-//    }
-    
-    func showAlertViewAfterEvaluatingPolicyWithMessage( message:String ){
-        
-        showAlertWithTitle(title: "Error", message: message)
-        
     }
     
     func showAlertWithTitle( title:String, message:String ) {

@@ -11,6 +11,7 @@
 		0633627620A89B57004297A3 /* SitesCadastradosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0633627520A89B57004297A3 /* SitesCadastradosViewController.swift */; };
 		0633627820A89DAA004297A3 /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0633627720A89DAA004297A3 /* SiteTableViewCell.swift */; };
 		0633627B20A8A2B5004297A3 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0633627A20A8A2B5004297A3 /* LocalAuthentication.framework */; };
+		0653438B20AE41B1001A351D /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653438A20AE41B1001A351D /* Usuario.swift */; };
 		06802AB620ADD6C600FD31EC /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06802AB520ADD6C600FD31EC /* Constantes.swift */; };
 		0696902020A74FDA002CD8E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696901F20A74FDA002CD8E2 /* AppDelegate.swift */; };
 		0696902220A74FDA002CD8E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696902120A74FDA002CD8E2 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		0633627520A89B57004297A3 /* SitesCadastradosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesCadastradosViewController.swift; sourceTree = "<group>"; };
 		0633627720A89DAA004297A3 /* SiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
 		0633627A20A8A2B5004297A3 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		0653438A20AE41B1001A351D /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		06802AB520ADD6C600FD31EC /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		0696901C20A74FDA002CD8E2 /* Cedro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cedro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0696901F20A74FDA002CD8E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				06FFE49520AB970800A38ADA /* Site.swift */,
 				06BA8EE820ABA32100F04D97 /* CadastroSiteViewController.swift */,
 				06802AB520ADD6C600FD31EC /* Constantes.swift */,
+				0653438A20AE41B1001A351D /* Usuario.swift */,
 			);
 			path = Cedro;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				0696902820A74FDA002CD8E2 /* Cedro.xcdatamodeld in Sources */,
 				06BA8EE920ABA32100F04D97 /* CadastroSiteViewController.swift in Sources */,
 				0633627620A89B57004297A3 /* SitesCadastradosViewController.swift in Sources */,
+				0653438B20AE41B1001A351D /* Usuario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

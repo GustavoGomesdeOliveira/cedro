@@ -32,9 +32,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             localizedReason: "Insira a digital para realizar o login",
             reply: { [unowned self] (success, error) -> Void in
                 if( success ) {
-                    let emailUsuario: String = KeychainWrapper.standard.string(forKey: Constantes.emailUsuario)!
-                    let senhaUsuario: String = KeychainWrapper.standard.string(forKey: Constantes.senhaUsuario)!
-                    self.requestLogin(email: emailUsuario, senha: senhaUsuario)
+                    let usuario = Usuario()
+                    let emailUsuario: String = usuario.recuperaEmailUsuario()
+                    let senhaUsuario: String = usuario.recuperaEmailUsuario()
+                    if(emailUsuario.count > 0 && senhaUsuario.count > 0) {
+                        self.requestLogin(email: emailUsuario, senha: senhaUsuario)
+                    } else {
+                        self.mostraAlerta(title: "Erro", message: "Falha ao realizar o login, dados não cadastrados")
+                    }
                 }else {
                     self.mostraAlerta(title: "Erro", message: "Falha ao realizar o login com a digital")
                 }

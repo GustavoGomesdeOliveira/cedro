@@ -49,10 +49,11 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
                     if let json = response.result.value{
                         let dict = json as! NSDictionary
                         if let token = dict["token"] {
-                            if(KeychainWrapper.standard.set(token as! String, forKey: Constantes.token)) {
-                                KeychainWrapper.standard.set(self.tfEmailUsuario.text!, forKey: Constantes.emailUsuario)
-                                KeychainWrapper.standard.set(self.tfSenha.text!, forKey: Constantes.senhaUsuario)
+                            let ususario = Usuario()
+                            if(usuario.salvaUsuario(token)) {
                                 self.navigationController?.popToRootViewController(animated: true)
+                            } else {
+                                self.mostraAlerta(title: "Erro", message: "Falha ao salvar o usuário")
                             }
                         }
                     }
