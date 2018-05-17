@@ -66,9 +66,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             if response.result.value != nil {
                 if let json = response.result.value{
-                    let token = json as! NSDictionary
-                    if(KeychainWrapper.standard.set(token["token"] as! String, forKey: Constantes.token)) {
-                        self.navigationController?.popToRootViewController(animated: true)
+                    let dict = json as! NSDictionary
+                    if let token = dict["token"] {
+                        if(KeychainWrapper.standard.set(token as! String, forKey: Constantes.token)) {
+                            self.navigationController?.popToRootViewController(animated: true)
+                        }
+                    } else {
+                        self.mostraAlerta(title: "Erro", message: "Falha ao realizar o login")
                     }
                 }
             }

@@ -50,7 +50,7 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
                         let dict = json as! NSDictionary
                         if let token = dict["token"] {
                             let usuario = Usuario()
-                            if(usuario.salvaUsuario(token: token, emailUsuario: self.tfEmailUsuario.text, senhaUsuario: self.tfSenha.text)) {
+                            if(usuario.salvaUsuario(token: token as! String, emailUsuario: self.tfEmailUsuario.text!, senhaUsuario: self.tfSenha.text!)) {
                                 self.navigationController?.popToRootViewController(animated: true)
                             } else {
                                 self.mostraAlerta(title: "Erro", message: "Falha ao salvar o usuário")

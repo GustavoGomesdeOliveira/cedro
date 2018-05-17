@@ -12,7 +12,7 @@ import SwiftKeychainWrapper
 class Usuario: NSObject {
     
     func salvaUsuario(token: String, emailUsuario: String, senhaUsuario: String) -> Bool {
-        return KeychainWrapper.standard.set(token as! String, forKey: Constantes.token) &&
+        return KeychainWrapper.standard.set(token, forKey: Constantes.token) &&
             KeychainWrapper.standard.set(emailUsuario, forKey: Constantes.emailUsuario) &&
             KeychainWrapper.standard.set(senhaUsuario, forKey: Constantes.senhaUsuario)
     }
