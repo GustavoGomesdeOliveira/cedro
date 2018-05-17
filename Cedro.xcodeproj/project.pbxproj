@@ -97,6 +97,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0653438C20AE465A001A351D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06FFE49520AB970800A38ADA /* Site.swift */,
+				0653438A20AE41B1001A351D /* Usuario.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0653438D20AE466E001A351D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0696902120A74FDA002CD8E2 /* ViewController.swift */,
+				0633627520A89B57004297A3 /* SitesCadastradosViewController.swift */,
+				0615329520AA58CC004316BF /* LoginViewController.swift */,
+				06AB78E720A8A89400189F08 /* CadastroViewController.swift */,
+				06BA8EE820ABA32100F04D97 /* CadastroSiteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0653438E20AE4689001A351D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0633627720A89DAA004297A3 /* SiteTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0696901320A74FDA002CD8E2 = {
 			isa = PBXGroup;
 			children = (
@@ -120,21 +149,16 @@
 		0696901E20A74FDA002CD8E2 /* Cedro */ = {
 			isa = PBXGroup;
 			children = (
+				0653438E20AE4689001A351D /* View */,
+				0653438D20AE466E001A351D /* Controllers */,
+				0653438C20AE465A001A351D /* Model */,
 				0696901F20A74FDA002CD8E2 /* AppDelegate.swift */,
-				0696902120A74FDA002CD8E2 /* ViewController.swift */,
 				0696902320A74FDA002CD8E2 /* Main.storyboard */,
 				0696902920A74FDA002CD8E2 /* Assets.xcassets */,
 				0696902B20A74FDA002CD8E2 /* LaunchScreen.storyboard */,
 				0696902E20A74FDA002CD8E2 /* Info.plist */,
 				0696902620A74FDA002CD8E2 /* Cedro.xcdatamodeld */,
-				0633627520A89B57004297A3 /* SitesCadastradosViewController.swift */,
-				0615329520AA58CC004316BF /* LoginViewController.swift */,
-				0633627720A89DAA004297A3 /* SiteTableViewCell.swift */,
-				06AB78E720A8A89400189F08 /* CadastroViewController.swift */,
-				06FFE49520AB970800A38ADA /* Site.swift */,
-				06BA8EE820ABA32100F04D97 /* CadastroSiteViewController.swift */,
 				06802AB520ADD6C600FD31EC /* Constantes.swift */,
-				0653438A20AE41B1001A351D /* Usuario.swift */,
 			);
 			path = Cedro;
 			sourceTree = "<group>";
