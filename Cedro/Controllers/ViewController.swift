@@ -32,20 +32,6 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: Constantes.segueLogar, sender: self)
     }
     
-    func showAlertWithTitle( title:String, message:String ) {
-        
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alertVC.addAction(okAction)
-        
-        DispatchQueue.main.async() { () -> Void in
-            
-            self.present(alertVC, animated: true, completion: nil)
-            
-        }
-    }
-        
     func navigateToAuthenticatedViewController(){
         
         if let loggedInVC = storyboard?.instantiateViewController(withIdentifier: "SiteCadastradoViewController") {
