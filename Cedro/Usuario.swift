@@ -11,10 +11,10 @@ import SwiftKeychainWrapper
 
 class Usuario: NSObject {
     
-    func salvaUsuario(token: String) -> Bool {
+    func salvaUsuario(token: String, emailUsuario: String, senhaUsuario: String) -> Bool {
         return KeychainWrapper.standard.set(token as! String, forKey: Constantes.token) &&
-            KeychainWrapper.standard.set(self.tfEmailUsuario.text!, forKey: Constantes.emailUsuario) &&
-            KeychainWrapper.standard.set(self.tfSenha.text!, forKey: Constantes.senhaUsuario)
+            KeychainWrapper.standard.set(emailUsuario, forKey: Constantes.emailUsuario) &&
+            KeychainWrapper.standard.set(senhaUsuario, forKey: Constantes.senhaUsuario)
     }
     
     func recuperaEmailUsuario() -> String {

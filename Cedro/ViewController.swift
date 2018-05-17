@@ -29,9 +29,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func logar(_ sender: UIButton) {
-        let auth = LAContext()
-        var error:NSError?
-        
         self.performSegue(withIdentifier: Constantes.segueLogar, sender: self)
     }
     
