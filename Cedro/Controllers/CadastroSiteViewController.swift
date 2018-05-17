@@ -82,7 +82,9 @@ class CadastroSiteViewController: UIViewController, UITextFieldDelegate {
                         let removeUsuario: Bool = KeychainWrapper.standard.removeObject(forKey: (self.site?.urlSite)! + "email")
                         let removeSenha: Bool = KeychainWrapper.standard.removeObject(forKey: (self.site?.urlSite)! + "senha")
                         if(removeSite && removeUsuario && removeSenha) {
-                            self.dismiss(animated: true, completion: nil)
+                            DispatchQueue.main.async {
+                                self.navigationController?.popViewController(animated: true)
+                            }
                         }
                     }else {
                         self.mostraAlerta(title: "Erro", message: "Falha ao deletar o site")

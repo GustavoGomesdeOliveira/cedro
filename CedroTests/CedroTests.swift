@@ -9,7 +9,18 @@
 import XCTest
 @testable import Cedro
 
+
 class CedroTests: XCTestCase {
+    
+    
+    //Devido a problemas de code signing, no qual não consegui resolver, não foi possível
+    //inserir os testes necessários
+    
+    func testaRecuperacaoDeSite() {
+        let site = Site()
+        site.urlSite =  site.recuperarURLSite(posicao: "0")
+        XCTAssertNotNil(site.urlSite)
+    }
     
     override func setUp() {
         super.setUp()
